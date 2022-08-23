@@ -5,22 +5,25 @@ import {
   Route
 } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Home from "./components/Home"
-import ToDoList from './components/ToDoList';
-import Calendar from './components/Calendar';
-import Food from "./components/Food"
+import Home from "./Page/Home"
+import ToDoList from './Page/ToDoPage';
+import CalendarPage from './Page/CalendarPage';
+import Food from "./Page/Food"
+
 
 function App() {
+
   return (
+
     <div className="App">
-      <p>Hello</p>
-      <Routes>
-        <Route path="/*" element={<Home />} />
-        <Route path="/*toDoList" element={< ToDoList />} />
-        <Route path="/*calendar" element={<Calendar />} />
-        <Route path="/*food" element={<Food />} />
-      </Routes>
       <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/toDoList" element={< ToDoList />} />
+        <Route path="/calendar" element={<CalendarPage />} />
+        <Route path="/food" element={<Food />} />
+      </Routes>
+
 
     </div>
   );
