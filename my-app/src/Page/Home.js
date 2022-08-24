@@ -1,19 +1,23 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import Todolist from "../components/Todolist"
 import styled from 'styled-components'
 import Image from "../images/calendarbackground.jpg"
-
+import Quotes from "../components/Quotes"
 function Home() {
+
     return (
         <HomeDiv>
+
+            <Quotes />
             <BigCalendarDiv>
                 <FullCalendar
                     plugins={[dayGridPlugin]}
                     initialView="dayGridMonth"
                 />
             </BigCalendarDiv>
+
         </HomeDiv>
 
     )

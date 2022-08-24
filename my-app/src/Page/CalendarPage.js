@@ -22,10 +22,10 @@ function CalendarPage() {
                         endHour: 22,
                         step: 60,
                     }}
-                    selectedDate={new Date(2021, 4, 5)}
                     day={{
                         startHour: 6,
                         endHour: 22,
+                        step: 60,
                     }}
                 />
             </DailyDiv>
